@@ -25,6 +25,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import hoistfinance from "./company/hoistfinance.png"
+import pixelraise from "./company/pixelraise.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -57,6 +59,8 @@ export {
   starbucks,
   tesla,
   carrent,
+  hoistfinance,
+  pixelraise,
   jobit,
   tripguide,
 };

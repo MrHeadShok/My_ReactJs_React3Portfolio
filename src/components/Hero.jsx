@@ -38,15 +38,15 @@ const Hero = () => {
             className="w-[35px] h-[64px] rounded-3xl border-4 border-[#51f95177]
         flex justify-center items-start p-2"
           >
-<motion.div 
-animate={{y:[0, 24, 0]}}
-transition={{duration:1.5,
-repeat: Infinity,
-repeatType:'loop'
-}}
-className="w-3 h-3 rounded-full bg-[#51f951e2] mb-1"
-/>
-
+            <motion.div
+              animate={{ y: [0, 24, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-[#51f951e2] mb-1"
+            />
           </div>
         </a>
       </div>

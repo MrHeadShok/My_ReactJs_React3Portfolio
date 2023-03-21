@@ -18,7 +18,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+ // To check in Email JS - to be fixed
   //template_29xzj06
   //service_lacgbyn
   //SrCnIBbqm3w9EZQh1

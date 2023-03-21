@@ -38,21 +38,24 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>About me </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Over<span className="text-[#51f951]">view </span></h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Over<span className="text-[#51f951]">view </span>
+        </h2>
       </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-white-100 text-[16px] max-w-3xl leading-[30px]"
-      >
-        A skilled software developer with a wealth of experience and certifications
-         in JavaScript and various front-end frameworks such as ReactJS, AngularJS, 
-         and VueJS, as well as NodeJS. I'm also proficient in developing mobile apps
-          and have mastered frameworks such as Ionic and React Native.
-          Aside from my technical knowledge, Proud to say that I have valuable
-           experience in product management and am well-versed in agile methodology.
-            
-      </motion.p>
+      <div className="w-full flex items-center justify-center">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-white-100 text-[16px] max-w-3xl leading-[30px]"
+        >
+          A skilled software developer with a wealth of knowledge in JavaScript
+          and various front-end frameworks such as ReactJS, AngularJS, and
+          VueJS, as well as NodeJS. Also proficient in developing mobile apps
+          using mobile app development frameworks such as Ionic and React
+          Native. <br className="invisible" />
+          In addition I'm proud to say that I have valuable experience in
+          product management and am well-versed in agile methodology.
+        </motion.p>
+      </div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

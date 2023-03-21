@@ -90,12 +90,13 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           My <span className="text-[#51f951]">Projects </span>
         </h2>
+        <h3 className={`${styles.sectionSubText} text-center text-[#ff3f3f]`}>Section is underwork</h3>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex items-center justify-center  ">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-white-100 text-[16px] max-w-3xl leading-[30px]"
+          className="mt-4 text-white-100  text-[16px] max-w-3xl leading-[30px]"
         >
           This section is still underwork. Here you will find some of the
           projects I worked on. If you have any question, inquiry or

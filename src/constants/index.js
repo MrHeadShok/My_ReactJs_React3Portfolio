@@ -3,23 +3,22 @@ import {
     backend,
     creator,
     web,
+    sam,
     javascript,
     typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
+    ionic,
     mongodb,
+    angular,
     git,
-    figma,
-    docker,
     hoistfinance,
     pixelraise,
-    carrent,
-    jobit,
-    tripguide,
+    squaresecure,
+    Nlinit,
     threejs,
   } from "../assets";
 
@@ -80,8 +79,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Ionic",
+      icon: ionic
     },
     {
       name: "Tailwind CSS",
@@ -96,20 +95,16 @@ import {
       icon: mongodb,
     },
     {
+      name: "Angular",
+      icon: angular
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
@@ -145,9 +140,9 @@ import {
       iconBg: "#E6DEDD",
       date: "Feb 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Working on developping additional plug-ins & features in existing web apps.",
+        "Managing & prioritizing backlog according to business value, time required & the order they were created.",
+        "Learning customer & market needs.",
+        "Creating the link between product and development.",
       ],
     },
   ];
@@ -155,94 +150,72 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "Testimonial 1",
+      name: "Full name",
       designation: "CFO",
-      company: "Acme Co",
+      company: "COMPANY NAME",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "Testimonial 2.",
+      name: "Full name",
       designation: "COO",
-      company: "DEF Corp",
+      company: "COMPANY NAME",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "seamlessly integrates his technical prowess and personal touch in projects. Excelling in multiple technologies while possessing a keen grasp of process logic. ",
+      name: "Samuel Buzatu",
+      designation: "COF of Grand Store ro",
+      company: "COMPANY NAME",
+      image: sam,
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "SquareSecure",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An E-commerce website for cyber protection services. Providing annual plan, Registration and details about offers.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "styledcomponent",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "framer",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: squaresecure,
+      source_code_link: "https://github.com/MrHeadShok/rjs-cybersecuritywebsite",
+      website_link :"https://squaresecure.netlify.app/",
     },
     {
-      name: "Job IT",
+      name: "Nlinit",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A mobile app (from In Line it), to allign your tasks and team. To help you better manage your projects and team. ",
       tags: [
         {
-          name: "react",
+          name: "Ionic",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "Angular",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Nlinit,
+      source_code_link: "https://github.com/MrHeadShok/Nlinit-Angular",
+      website_link :"https://github.com/MrHeadShok/Nlinit-Angular",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };

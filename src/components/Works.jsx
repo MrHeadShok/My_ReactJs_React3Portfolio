@@ -17,6 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  website_link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -35,8 +36,8 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
+          <div className="inset-0 flex justify-end m-3 card-img_hover">
+          <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
@@ -50,7 +51,7 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(website_link, "_blank")}
               className="black border-style:double w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -90,7 +91,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           My <span className="text-[#51f951]">Projects </span>
         </h2>
-        <h3 className={`${styles.sectionSubText} text-center text-[#ff3f3f]`}>Section is underwork</h3>
+        <h3 className={`${styles.sectionSubText} text-center text-[#de3737]`}>Section is underwork</h3>
       </motion.div>
 
       <div className="w-full flex items-center justify-center  ">
@@ -103,7 +104,8 @@ const Works = () => {
           recomendation, feel free to reach out to me using{" "}
           <span className="text-[#51f951] no-underline hover:underline">
             {" "}
-            the contact form down below.
+           <a href="#contact"> the contact form down below.
+           </a>
           </span>
         </motion.p>
       </div>

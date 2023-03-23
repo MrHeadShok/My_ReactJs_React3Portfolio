@@ -8,6 +8,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utilities/motion";
 
+import { textVariant } from "../utilities/motion";
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -19,9 +21,10 @@ const Contact = () => {
     message: "",
   });
  // To check in Email JS - to be fixed
-  //template_29xzj06
-  //service_lacgbyn
-  //SrCnIBbqm3w9EZQh1
+  //template ID:  template_29xzj06
+  //service ID:  service_lacgbyn
+  //Public key : L5Erz_ioYWHL5w_Bc
+  //Private key : 0Sc5g3lHh1xLEYBCjWJVl
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +33,7 @@ const Contact = () => {
     emailjs
       .send(
         "service_lacgbyn",
-        "//template_29xzj06",
+        "template_29xzj06",
         {
           from_name: form.name,
           to_name: "Taieb",
@@ -38,7 +41,7 @@ const Contact = () => {
           to_email: "tbelkahla3@gmail.com",
           message: form.message,
         },
-        "SrCnIBbqm3w9EZQh1"
+        "L5Erz_ioYWHL5w_Bc"
       )
       .then(() => {
         setLoading(false);
@@ -68,13 +71,21 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>Get in touch</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Send me <span className="text-[#51f951]">a message</span>
+        </h2>
+      </motion.div>
+
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Message me</h3>
+        <p className={styles.sectionSubText}></p>
+        <h3 className={styles.sectionHeadText}></h3>
 
         <form
           ref={formRef}
@@ -88,7 +99,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="How can I call you ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -100,7 +111,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -112,7 +123,7 @@ const Contact = () => {
               rows="9"
               value={form.message}
               onChange={handleChange}
-              placeholder="Please share your thoughts"
+              placeholder="What do you have in mind ?"
               className="py-4 px-6 bg-tertiary placeholder:text-secondary
                     text-white rounded-lg outline-none border-none font-medium"
             />
@@ -135,6 +146,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+    </>
   );
 };
 

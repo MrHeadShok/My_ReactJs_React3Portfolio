@@ -91,7 +91,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           My <span className="text-[#51f951]">Projects </span>
         </h2>
-        <h3 className={`${styles.sectionSubText} text-center text-[#de3737]`}>Section is underwork</h3>
+        <h3 className={`${styles.warning} text-center text-[#de3737]`}>Section is underwork</h3>
       </motion.div>
 
       <div className="w-full flex items-center justify-center  ">

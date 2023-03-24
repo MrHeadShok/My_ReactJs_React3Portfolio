@@ -20,6 +20,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  
  // To check in Email JS - to be fixed
   //template ID:  template_29xzj06
   //service ID:  service_lacgbyn

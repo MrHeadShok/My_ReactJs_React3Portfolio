@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -35,7 +34,6 @@ import Nlinit from './Nlinit.png'
 
 export {
   newtab,
-  logo,
   backend,
   creator,
   mobile,

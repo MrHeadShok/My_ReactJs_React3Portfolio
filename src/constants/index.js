@@ -150,6 +150,14 @@ import {
   const testimonials = [
     {
       testimonial:
+        "seamlessly integrates his technical prowess and personal touch in projects. Excelling in multiple technologies while possessing a keen grasp of process logic. ",
+      name: "Samuel Buzatu",
+      designation: "COF of Grand Store ro",
+      company: "COMPANY NAME",
+      image: sam,
+    },
+    { 
+      testimonial:
         "Testimonial 1",
       name: "Full name",
       designation: "CFO",
@@ -163,14 +171,6 @@ import {
       designation: "COO",
       company: "COMPANY NAME",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "seamlessly integrates his technical prowess and personal touch in projects. Excelling in multiple technologies while possessing a keen grasp of process logic. ",
-      name: "Samuel Buzatu",
-      designation: "COF of Grand Store ro",
-      company: "COMPANY NAME",
-      image: sam,
     },
   ];
   
